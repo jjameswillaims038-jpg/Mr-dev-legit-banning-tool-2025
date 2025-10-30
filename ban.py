@@ -163,16 +163,24 @@ if os.path.exists(perm_file):
                 f.write(line)
     print(f"{Fore.MAGENTA}💀 𝗡𝘂𝗺𝗯𝗲𝗿 {number} 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗿𝗶𝗽𝗽𝗲𝗱 𝗳𝗿𝗼𝗺 𝗲𝘁𝗲𝗿𝗻𝗮𝗹 𝗯𝗮𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁.")
 
+from colorama import Fore
+import os
+
+temp_file = "temp_ban.txt"
+
 def unban_temporary():
-    number = input(f"{Fore.YELLOW}📱 𝗘𝗻𝘁𝗲𝗿 𝗻𝘂𝗺𝗯𝗲𝗿 to 𝗨𝗡𝗕𝗔𝗡 𝗳𝗿𝗼𝗺 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝘆: ").strip()
+    number = input(f"{Fore.RED}🩸 𝗦𝗵𝗮𝗱𝗼𝘄 𝗿𝗲𝗮𝗽𝗲𝗿 whispers: 𝗳𝗿𝗼𝗺 TEMP ban , 𝗰𝗹𝗮𝗶𝗺 𝘁𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗻𝘂𝗺𝗯𝗲𝗿: ").strip()
+    
     if os.path.exists(temp_file):
         with open(temp_file, "r") as f:
             lines = f.readlines()
+        # Keep all lines that DON'T match the number
+        new_lines = [line for line in lines if not line.startswith(number + ",")]
         with open(temp_file, "w") as f:
-            for line in lines:
-                if not line.startswith(number + ","):
-                    f.write(line)
-        print(f"{Fore.GREEN}✅ {number} 𝘂𝗻𝗯𝗮𝗻𝗻𝗲𝗱 𝗳𝗿𝗼𝗺 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝘆.")
+            f.writelines(new_lines)
+        print(f"{Fore.MAGENTA}💀 {number} 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗿𝗶𝗽𝗽𝗲𝗱 𝗳𝗿𝗼𝗺 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝘆 𝗽𝗮𝗶𝗻!")
+    else:
+        print(f"{Fore.YELLOW}⚠️ 𝗡𝗼 𝗲𝘁𝗵𝗲𝗿𝗲𝗮𝗹 𝗹𝗶𝘀𝘁 𝗳𝗼𝘂𝗻𝗱. 𝗡𝘂𝗺𝗯𝗲𝗿 {number} 𝗰𝗮𝗻𝗻𝗼𝘁 𝗯𝗲 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱.")
         
 def send_report_email(target_number, reason, count):
     context = ssl.create_default_context()
