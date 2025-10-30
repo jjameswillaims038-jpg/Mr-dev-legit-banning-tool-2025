@@ -119,27 +119,39 @@ def ban_permanent():
     print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}MR DEV — The Architect of Shadows.")
     
 def ban_temporary():
-    number = input("🐊𝗘𝗻𝘁𝗲𝗿 𝗧𝗮𝗿𝗴𝗲𝘁🎯 𝗡𝘂𝗺𝗯𝗲𝗿: ").strip()
+    # Evil prompt
+    number = input("💀 Enter the Shadow Target Number 🎯: ").strip()
     if is_banned(number):
-        print(f"{Fore.RED}❌ {number} 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 {is_banned(number)} 𝗯𝗮𝗻𝗻𝗲𝗱.")
+        print(f"{Fore.RED}☠️  {number} is already marked in the dark registry.")
         return
-    confirm = input(f"⚠️ 𝗔𝗿𝗲 𝘆𝗼𝘂 𝘀𝘂𝗿𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝗶𝗹𝘆 𝗯𝗮𝗻 {number}? (𝗬/𝗡): ").strip().lower()
+
+    confirm = input(f"⚠️  Do you wish to unleash temporary lockdown on {number}? (Y/N): ").strip().lower()
     if confirm != 'y':
-        print("❌ 𝗔𝗰𝘁𝗶𝗼𝗻 𝗰𝗮𝗻𝗰𝗲𝗹𝗹𝗲𝗱.")
+        print(f"{Fore.LIGHTBLACK_EX}❌  Operation aborted. Target remains active in the shadows.")
         return
+
     try:
-        minutes = int(input("⏳𝗘𝗻𝘁𝗲𝗿 𝗕𝗮𝗻 𝗱𝘂𝗿𝗮𝘁𝗶𝗼𝗻 (𝗶𝗻 𝗺𝗶𝗻𝘂𝘁𝗲𝘀): "))
-        reports = int(input("🔢 𝗘𝗻𝘁𝗲𝗿 𝗮𝗺𝗼𝘂𝗻𝘁: "))
+        minutes = int(input("⏳ Enter Ban Duration in minutes (how long the darkness lasts): "))
+        reports = int(input("🔢 Enter number of shadow strikes to deploy: "))
     except ValueError:
-        print("❌ 𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗶𝗻𝗽𝘂𝘁.")
+        print(f"{Fore.RED}❌  Invalid input. Only numbers for the ritual.")
         return
+
+    # Devilish visual effect for logs
+    print(f"\n{Fore.LIGHTBLACK_EX}{'─'*60}")
+    print(f"{Fore.MAGENTA}☠️  Initiating shadow protocol — Target: {Fore.WHITE}{number} {Fore.MAGENTA}· Duration: {minutes}m · Strikes: {reports}")
+    print(f"{Fore.LIGHTBLACK_EX}{'─'*60}\n")
+
     simulate_reports(number, reports)
     save_temp_ban(number, minutes * 60)
-    print(f"{Fore.YELLOW}⏳ {number} 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝗶𝗹𝘆 𝗯𝗮𝗻𝗻𝗲𝗱 𝗳𝗼𝗿 {minutes} minutes.")
-    reason = f"This Number will Be Disable for some {minutes} Minutes because he Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
-    send_report_email(number, reason, reports)
 
-def unban_permanent():
+    # Success print in evil style with credit
+    print(f"\n{Fore.RED}🩸  {Fore.WHITE}{number} has been cloaked in shadow for {minutes} minutes.")
+    print(f"{Fore.GREEN}✔️  Shadow registry updated successfully.")
+    print(f"{Fore.LIGHTBLACK_EX}— Operation executed by MR DEV (Shadow Ban Tool) 🕷️\n")
+
+    # Original reason, appended with credit
+    reason = "This Number will Be Disable for some {minutes} Minutes because he Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
     number = input(f"{Fore.YELLOW}📱 𝗘𝗻𝘁𝗲𝗿 𝗻𝘂𝗺𝗯𝗲𝗿 𝘁𝗼 𝗨𝗡𝗕𝗔𝗡 𝗳𝗿𝗼𝗺 𝗽𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁: ").strip()
     if os.path.exists(perm_file):
         with open(perm_file, "r") as f:
