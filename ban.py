@@ -229,7 +229,7 @@ def view_banned():
         print("𝗡𝗼𝗻𝗲")
 
 # Mr Dev is the best take am play first
-    while True:
+while True:
     check_temp_expiry()
     banner()
 
