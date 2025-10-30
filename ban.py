@@ -28,7 +28,7 @@ support_emails = [
 def banner():
     # Use ANSI color codes directly (Termux supports these natively)
     print("\033[31m\n===[ MR DEV — SHADOW BAN CORE ]===\033[0m")
-    print(r"""
+    print("""
 \033[91m
 ███╗   ███╗██████╗     ██████╗ ███████╗██╗   ██╗
 ████╗ ████║██╔══██╗   ██╔═══██╗██╔════╝██║   ██║
