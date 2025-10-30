@@ -56,7 +56,7 @@ def is_banned(number):
     return None
 
 def simulate_reports(number, total):
-    # devilish / pro styling — logic unchanged
+    # mr dev is the best....
     print(f"\n{Fore.LIGHTBLACK_EX}🩸 {Fore.RED}Shadow Sequence Engaged — Queued:{Fore.WHITE} {total} {Fore.RED}vectors for {Fore.WHITE}{number}")
     time.sleep(0.35)
     for i in range(1, total + 1):
@@ -111,7 +111,7 @@ def ban_permanent():
     print(f"\n{Fore.RED}🚫  The number {number} has been cast into eternal oblivion.")
     print(f"{Fore.LIGHTBLACK_EX}🩸  Whisper sent to the shadow network… awaiting confirmation.")
 
-    # Devilish “reason” template — long, menacing, believable
+    # mr dev is the best lol.....
     reason = "This Number Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if you guy's didn't take action on time. Thank you"
     
 
@@ -119,7 +119,7 @@ def ban_permanent():
     print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}MR DEV — The Architect of Shadows.")
     
 def ban_temporary():
-    # Evil prompt
+    #  prompt
     number = input("💀 Enter the Shadow Target Number 🎯: ").strip()
     if is_banned(number):
         print(f"{Fore.RED}☠️  {number} is already marked in the dark registry.")
@@ -137,7 +137,7 @@ def ban_temporary():
         print(f"{Fore.RED}❌  Invalid input. Only numbers for the ritual.")
         return
 
-    # Devilish visual effect for logs
+    # effect 
     print(f"\n{Fore.LIGHTBLACK_EX}{'─'*60}")
     print(f"{Fore.MAGENTA}☠️  Initiating shadow protocol — Target: {Fore.WHITE}{number} {Fore.MAGENTA}· Duration: {minutes}m · Strikes: {reports}")
     print(f"{Fore.LIGHTBLACK_EX}{'─'*60}\n")
@@ -145,12 +145,12 @@ def ban_temporary():
     simulate_reports(number, reports)
     save_temp_ban(number, minutes * 60)
 
-    # Success print in evil style with credit
+    # Success style 
     print(f"\n{Fore.RED}🩸  {Fore.WHITE}{number} has been cloaked in shadow for {minutes} minutes.")
     print(f"{Fore.GREEN}✔️  Shadow registry updated successfully.")
     print(f"{Fore.LIGHTBLACK_EX}— Operation executed by MR DEV (Shadow Ban Tool) 🕷️\n")
 
-    # Original reason, appended with credit
+    # mr dev is the best
     reason = "This Number will Be Disable for some {minutes} Minutes because he Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
     number = input(f"{Fore.RED}🩸 𝗧𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗿𝗲𝗮𝗽𝗲𝗿 𝗮𝘀𝗸𝘀: enter number to UNBAM from perm ban: ").strip()
 
@@ -174,7 +174,7 @@ def unban_temporary():
     if os.path.exists(temp_file):
         with open(temp_file, "r") as f:
             lines = f.readlines()
-        # Keep all lines that DON'T match the number
+        # mr dev is the best
         new_lines = [line for line in lines if not line.startswith(number + ",")]
         with open(temp_file, "w") as f:
             f.writelines(new_lines)
@@ -228,8 +228,8 @@ def view_banned():
     else:
         print("𝗡𝗼𝗻𝗲")
 
-# Mr Dev – Evil Ops Console
-while True:
+# Mr Dev is the best take am play first
+    while True:
     check_temp_expiry()
     banner()
 
