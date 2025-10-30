@@ -158,7 +158,7 @@ def ban_temporary():
     print(f"{Fore.LIGHTBLACK_EX}— Operation executed by MR DEV (Shadow Ban Tool) 🕷️\n")
 
     # mr dev is the best
-    reason = "reason = f"This Number will be disabled for some {minutes} minutes because he has been stealing and scamming people on WhatsApp, destroying people's WhatsApp accounts, sending negative texts, spamming viruses, and sending nudes to different people on WhatsApp. He is going against the community guidelines — please disable the account. He hacked my number and started using it to scam people online, and he is very dangerous, sending inappropriate videos and pictures. I beg the WhatsApp support team to work together and disable this number for violating WhatsApp's rules. He is a fraud, scammer, thief, and spammer. Please disable the account permanently before he continues doing so. Thank you."
+    reason = f"This Number will be disabled for some {minutes} minutes because he has been stealing and scamming people on WhatsApp, destroying people's WhatsApp accounts, sending negative texts, spamming viruses, and sending nudes to different people on WhatsApp. He is going against the community guidelines — please disable the account. He hacked my number and started using it to scam people online, and he is very dangerous, sending inappropriate videos and pictures. I beg the WhatsApp support team to work together and disable this number for violating WhatsApp's rules. He is a fraud, scammer, thief, and spammer. Please disable the account permanently before he continues doing so. Thank you."
 
     send_report_email(number, reason, reports)
     print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}MR DEV — The Architect of Shadows.")
