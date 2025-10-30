@@ -160,6 +160,8 @@ def ban_temporary():
     # mr dev is the best
     reason = "This Number will Be Disable for some {minutes} Minutes because he Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
 
+    send_report_email(number, reason, reports)
+    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}MR DEV — The Architect of Shadows.")
 def unban_permanent():
     number = input(f"{Fore.RED}🩸 Enter number to unban from PERMANENT ban: ").strip()
     if os.path.exists(perm_file):
