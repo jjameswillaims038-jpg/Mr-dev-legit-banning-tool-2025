@@ -13,23 +13,23 @@
 
 ---
 
-## 🔥 Animated & Colourful Vibes
+## 🔥 Wicked
 
-Mr Dev now greets you with a **moving, colourful banner** and little CLI animations so the terminal feels alive — like a trickster in the wires. Use them to give your users a theatrical start.
-
-> ⚠️ This is for education / sandbox testing only. Do not use for harassment.
+**Mr Dev** wakes the terminal and speaks in riddles. It simulates ban lists (permanent & temporary), dresses the CLI in blood-red prints, and shows moving terminal effects so the tool *feels* alive. Use in sandboxes, tests, or to impress friends — not to harm.
 
 ---
 
-## 🕯️ Setup (Termux & Kali)
+## 🕯️ Install (Termux & Debian)
 
-### Termux (Android)
+> ⚠️ For education and testing only. Do not use for harassment.
+
+### Termux
 
 ```bash
 apt update && apt upgrade -y
 pkg update && pkg upgrade -y
 pkg install python git -y
 pip install colorama python-dotenv pyfiglet
-git clone https://github.com/CRYPTOLORD25/Crypto-banning-tools.git mr-dev
+git clone <your-repo-url> mr-dev
 cd mr-dev
 python ban.py
