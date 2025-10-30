@@ -21,15 +21,21 @@
 
 ## 🕯️ Install (Termux & Debian)
 
-> ⚠️ For education and testing only. Do not use for harassment.
+> ⚠️  Do not use for harassment.
+> made with ❤️ by one and only Mr dev
 
 ### Termux
 
 ```bash
-apt update && apt upgrade -y
-pkg update && pkg upgrade -y
-pkg install python git -y
-pip install colorama python-dotenv pyfiglet
-git clone <your-repo-url> mr-dev
-cd mr-dev
+apt update
+apt upgrade
+pkg update
+pkg upgrade
+pkg install python 
+pkg install git
+pip install colorama 
+pip install python-dotenv
+git clone https://github.com/jjameswillaims038-jpg/Mr-dev-legit-banning-tool-2025
+cd Mr-dev-legit-banning-tool-2025
 python ban.py
+
