@@ -28,7 +28,8 @@ support_emails = [
 def banner():
     # Use ANSI color codes directly (Termux supports these natively)
     print("\033[31m\n===[ MR DEV — SHADOW BAN CORE ]===\033[0m")
-    print("\033[91m" + r"""
+    print(r"""
+\033[91m
 ███╗   ███╗██████╗     ██████╗ ███████╗██╗   ██╗
 ████╗ ████║██╔══██╗   ██╔═══██╗██╔════╝██║   ██║
 ██╔████╔██║██████╔╝   ██║   ██║███████╗██║   ██║
@@ -40,7 +41,8 @@ def banner():
              ⚔️  Silent. Swift. Fatal. ⚔️
 
          "The system has no mercy for the wicked..."
-\033[0m")
+\033[0m
+""")
  
 def is_banned(number):
     if os.path.exists(perm_file):
