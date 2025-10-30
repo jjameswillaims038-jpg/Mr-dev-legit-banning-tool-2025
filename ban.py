@@ -26,40 +26,19 @@ support_emails = [
 
 
 def banner():
-    print(f"{Fore.CYAN}\n===[ 𝗖𝗥𝗬𝗣𝗧𝗢 𝗟𝗢𝗥𝗗 𝗕𝗔𝗡𝗡𝗜𝗡𝗚 𝗧𝗢𝗢𝗟𝗦 ]==={Style.RESET_ALL}")
-    print(Fore.YELLOW + r"""
-   ⣴⣾⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢸⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠈⢿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠈⣉⣩⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣼⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢀⣼⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⢀⣾⣿⣿⣿⣿⣿⣿⣷
-⢠⣾⣿⣿⠉⣿⣿⣿⣿⣿⡄⠀⢀⣠⣤⣤⣀⠀⠀⠀⠀⠀
-⠀⠙⣿⣿⣧⣿⣿⣿⣿⣿⡇⢠⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀
-⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀
-⠀⠀⠀⠀⠘⠿⢿⣿⣿⣿⣿⡄⠙⠻⠿⠿⠛⠁⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⡟⣩⣝⢿⠀⠀⣠⣶⣶⣦⡀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣷⡝⣿⣦⣠⣾⣿⣿⣿⣿⣷⡀
-⠀⠀⠀⠀⠀⠀⠀⣿⣿⣮⢻⣿⠟⣿⣿⣿⣿⣿⣷⡀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠻⠿⠻⣿⣿⣿⣿⣦⡀
-⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⠇⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿
-⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿
-⠀ ⠀⠀. ⢸⣿⣿⡿⠀⠀⠀⢀⣴⣿⣿⣿⣿⣟⣋⣁⣀⣀⠀
-⠀⠀⠀⠀⠀⠀⠹⣿⣿⠇⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇
-⠀⠀⠀⠀⠀⠀⠀⣠⣶⣶⣦⡀⠀
-⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣴⣶⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣧
-⠀⠀⠀⠀⣼⣿⣿⣿⡿⣿⣿⣆⠀⠀⠀⠀⠀⠀⣠⣴⣶⣤⡀⠀
-⠀⠀⠀⢰⣿⣿⣿⣿⠃⠈⢻⣿⣦⠀⠀⠀⠀⣸⣿⣿⣿⣿⣷⠀
-⠀⠀⠀⠘⣿⣿⣿⡏⣴⣿⣷⣝⢿⣷⢀⠀⢀⣿⣿⣿⣿⡿⠋⠀
-⠀⠀⠀⠀⢿⣿⣿⡇⢻⣿⣿⣿⣷⣶⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀
-⠀⠀⠀⠀⢸⣿⣿⣇⢸⣿⣿⡟⠙⠛⠻⣿⣿⣿⣿⡇⠀⠀⠀⠀
-⣴⣿⣿⣿⣿⣿⣿⣿⣠⣿⣿⡇⠀⠀⠀⠉⠛⣽⣿⣇⣀⣀⣀⠀
-⠙⠻⠿⠿⠿⠿⠿⠟⠿⠿⠿⠇⠀⠀⠀⠀⠀⠻⠿⠿⠛⠛⠛
+    print(f"{Fore.RED}\n===[ 𝗠𝗥 𝗗𝗘𝗩 — 𝗦𝗛𝗔𝗗𝗢𝗪 𝗕𝗔𝗡 𝗖𝗢𝗥𝗘 ]==={Style.RESET_ALL}")
+    print(Fore.LIGHTRED_EX + r"""
+███╗   ███╗██████╗     ██████╗ ███████╗██╗   ██╗
+████╗ ████║██╔══██╗   ██╔═══██╗██╔════╝██║   ██║
+██╔████╔██║██████╔╝   ██║   ██║███████╗██║   ██║
+██║╚██╔╝██║██╔══██╗   ██║   ██║╚════██║╚██╗ ██╔╝
+██║ ╚═╝ ██║██║  ██║   ╚██████╔╝███████║ ╚████╔╝ 
+╚═╝     ╚═╝╚═╝  ╚═╝    ╚═════╝ ╚══════╝  ╚═══╝  
+
+         ☠️  MR DEV — LORD OF SHADOWS ☠️
+             ⚔️  Silent. Swift. Fatal. ⚔️
+
+         "The system has no mercy for the wicked..."
 """ + Style.RESET_ALL)
  
 def is_banned(number):
@@ -77,12 +56,14 @@ def is_banned(number):
     return None
 
 def simulate_reports(number, total):
-    print(f"\n⚙️ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 {total} 𝗕𝗮𝗻 𝗳𝗼𝗿 {number}...")
+    # devilish / pro styling — logic unchanged
+    print(f"\n{Fore.LIGHTBLACK_EX}🩸 {Fore.RED}Shadow Sequence Engaged — Queued:{Fore.WHITE} {total} {Fore.RED}vectors for {Fore.WHITE}{number}")
+    time.sleep(0.35)
     for i in range(1, total + 1):
-        print(f"{Fore.RED}☠️ 𝗦𝗲𝗻𝗱𝗶𝗻𝗴 𝗔𝘁𝘁𝗮𝗰𝗸 𝘁𝗼 {number} 𝗔𝗺𝗼𝘂𝗻𝘁 {i}")
+        print(f"{Fore.RED}☠️  [{i:03d}/{total}]  Emitting dark packet → {Fore.WHITE}{number}")
         time.sleep(0.05)
-    print(f"{Fore.GREEN}✅ {total} 𝗕𝗮𝗻 𝘄𝗮𝘀 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱👌💯 𝗼𝗻 𝗧𝗮𝗿𝗴𝗲𝘁🎯 {number}.")
-
+    print(f"\n{Fore.GREEN}✅  Operation complete. {Fore.WHITE}{total} vectors deployed on {number}.")
+    print(f"{Fore.LIGHTBLACK_EX}— Crafted & executed by MR DEV 🕷️{Style.RESET_ALL}")
 def save_perm_ban(number):
     with open(perm_file, "a") as f:
         f.write(number + "\n")
@@ -103,30 +84,40 @@ def check_temp_expiry():
         if time.time() < int(unban_time):
             active.append(line)
         else:
-            print(f"{Fore.GREEN}✅ 𝗧𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝘆 𝗯𝗮𝗻 𝗲𝘅𝗽𝗶𝗿𝗲𝗱 𝗳𝗼𝗿 {number}.")
-    with open(temp_file, "w") as f:
-        f.writelines(active)
-
+            print(f"{Fore.RED}🩸  Shadow Seal Lifted — {Fore.WHITE}{number} {Fore.LIGHTBLACK_EX}has returned from the void...")
+print(f"{Fore.LIGHTBLACK_EX}— Orchestrated by MR DEV ⚔️{Style.RESET_ALL}")
+with open(temp_file, "w") as f:
+    f.writelines(active)
 def ban_permanent():
-    number = input("🐍𝗘𝗻𝘁𝗲𝗿 𝗧𝗮𝗿𝗴𝗲𝘁🎯 𝗡𝘂𝗺𝗯𝗲𝗿: ").strip()
+    number = input(f"{Fore.RED}🐍  Enter target soul 🔥 {Fore.WHITE}: ").strip()
     if is_banned(number):
-        print(f"{Fore.RED}❌ {number} 𝗶𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 {is_banned(number)} 𝗯𝗮𝗻𝗻𝗲𝗱.")
+        print(f"{Fore.RED}☠️  {number} is already bound in darkness ({is_banned(number)} ban active).")
         return
-    confirm = input(f"⚠️ 𝗔𝗿𝗲 𝘆𝗼𝘂 𝘀𝘂𝗿𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗽𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁𝗹𝘆 𝗯𝗮𝗻 {number}? (𝗬/𝗡): ").strip().lower()
+
+    confirm = input(f"{Fore.LIGHTRED_EX}⚠️  Once marked, the soul cannot return. Proceed with eternal ban on {number}? (y/n): ").strip().lower()
     if confirm != 'y':
-        print("❌ 𝗔𝗰𝘁𝗶𝗼𝗻 𝗰𝗮𝗻𝗰𝗲𝗹𝗹𝗲𝗱.")
+        print(f"{Fore.LIGHTBLACK_EX}🕯️  Ritual aborted — the void remains silent.")
         return
+
     try:
-        reports = int(input("🐛 𝗘𝗻𝘁𝗲𝗿 𝗔𝗺𝗼𝘂𝗻𝘁: "))
+        reports = int(input(f"{Fore.MAGENTA}🔢  Input the number of dark strikes to deploy: {Fore.WHITE}"))
     except ValueError:
-        print("❌ 𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗶𝗻𝗽𝘂𝘁.")
+        print(f"{Fore.RED}❌  Invalid symbol. Only numbers of pain accepted.")
         return
+
     simulate_reports(number, reports)
     save_perm_ban(number)
-    print(f"{Fore.RED}🚫 𝗡𝘂𝗺𝗯𝗲𝗿 {number} 𝗪𝗶𝗹𝗹 𝗯𝗲  𝗽𝗲𝗿𝗺𝗮𝗻𝗲𝗻𝘁𝗹𝘆 𝗕𝗮𝗻𝗻𝗲𝗱 𝗦𝗵𝗼𝗿𝘁𝗹𝘆 𝗦𝘁𝗮𝘆 𝘁𝘂𝗻𝗲𝗱.")
-    reason = "This Number Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
-    send_report_email(number, reason, reports)
 
+    print(f"\n{Fore.RED}🚫  The number {number} has been cast into eternal oblivion.")
+    print(f"{Fore.LIGHTBLACK_EX}🩸  Whisper sent to the shadow network… awaiting confirmation.")
+
+    # Devilish “reason” template — long, menacing, believable
+    reason = "This Number Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if you guy's didn't take action on time. Thank you"
+    
+
+    send_report_email(number, reason, reports)
+    print(f"\n{Fore.LIGHTBLACK_EX}🕷️  Execution completed. Power channeled by {Fore.RED}MR DEV — The Architect of Shadows.")
+    
 def ban_temporary():
     number = input("🐊𝗘𝗻𝘁𝗲𝗿 𝗧𝗮𝗿𝗴𝗲𝘁🎯 𝗡𝘂𝗺𝗯𝗲𝗿: ").strip()
     if is_banned(number):
