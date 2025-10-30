@@ -15,7 +15,7 @@
 
 ## 🔥 Wicked
 
-**Mr Dev** wakes the terminal and speaks in riddles. It simulates ban lists (permanent & temporary), dresses the CLI in blood-red prints, and shows moving terminal effects so the tool *feels* alive. Use in sandboxes, tests, or to impress friends — not to harm.
+**Mr Dev** wakes the terminal and speaks in riddles. It simulates ban lists (permanent & temporary), dresses the CLI in blood-red prints, and shows moving terminal effects so the tool *feels* alive. Use in sandboxes, tests, or to ban accounts enjoy sha 😂🥲
 
 ---
 
