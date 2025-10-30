@@ -1,31 +1,35 @@
 # 👹 Mr Dev — The Devilish Ban Tool
 
-Welcome, mortal. You have summoned **Mr Dev** — a wicked little CLI that *plays* with the idea of banishment.  
-Use it in the shadows, test it in sandboxes, and remember: this is mischief for **education only**. Mr Dev takes no responsibility for your chaos.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=2500&pause=700&color=AA0000&center=true&vCenter=true&width=900&lines=👹+Mr+Dev+—+Wrought+in+Mischief;Summon+the+CLI+and+taste+the+chaos" alt="Mr Dev Typing" />
+</p>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Beta-orange.svg" alt="status" />
+  <img src="https://img.shields.io/badge/Language-Python-blue.svg" alt="python" />
+  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-red.svg" alt="platform" />
+  <img src="https://img.shields.io/badge/Use-Education%20Only-yellow.svg" alt="use" />
+</div>
 
 ---
 
-## 🔮 What is this?
+## 🔥 Animated & Colourful Vibes
 
-**Mr Dev** is a Python CLI that simulates banning phone numbers (permanently or temporarily).  
-It’s crafted for Termux and Linux tinkering—fun to poke, learn from, and improve. Treat it like a dark toy: curious, dangerous if abused, and best tested in isolated environments.
+Mr Dev now greets you with a **moving, colourful banner** and little CLI animations so the terminal feels alive — like a trickster in the wires. Use them to give your users a theatrical start.
+
+> ⚠️ This is for education / sandbox testing only. Do not use for harassment.
 
 ---
 
-## 🕯️ Guide to the Underworld (Setup)
+## 🕯️ Setup (Termux & Kali)
 
-> ⚠️ **Warning:** Use responsibly. This repository is provided for educational purposes only.
-
-### 📱 Termux (Android)
+### Termux (Android)
 
 ```bash
 apt update && apt upgrade -y
 pkg update && pkg upgrade -y
 pkg install python git -y
-pip install colorama python-dotenv
+pip install colorama python-dotenv pyfiglet
 git clone https://github.com/CRYPTOLORD25/Crypto-banning-tools.git mr-dev
 cd mr-dev
 python ban.py
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=800&color=AA0000&center=true&width=650&lines=Mr+Dev+—+Wrought+in+Mischief;Use+for+Education+Only;+Respect+the+Code" alt="Mr Dev Typing" />
-</p>
