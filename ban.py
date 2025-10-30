@@ -78,16 +78,23 @@ def check_temp_expiry():
         return
     with open(temp_file, "r") as f:
         lines = f.readlines()
+
     active = []
     for line in lines:
-        number, unban_time = line.strip().split(",")
+        try:
+            number, unban_time = line.strip().split(",")
+        except ValueError:
+            continue
         if time.time() < int(unban_time):
             active.append(line)
         else:
             print(f"{Fore.RED}🩸  Shadow Seal Lifted — {Fore.WHITE}{number} {Fore.LIGHTBLACK_EX}has returned from the void...")
-print(f"{Fore.LIGHTBLACK_EX}— Orchestrated by MR DEV ⚔️{Style.RESET_ALL}")
-with open(temp_file, "w") as f:
-    f.writelines(active)
+
+    with open(temp_file, "w") as f:
+        f.writelines(active)
+
+    print(f"{Fore.LIGHTBLACK_EX}— Orchestrated by MR DEV ⚔️{Style.RESET_ALL}")
+    
 def ban_permanent():
     number = input(f"{Fore.RED}🐍  Enter target soul 🔥 {Fore.WHITE}: ").strip()
     if is_banned(number):
@@ -152,21 +159,19 @@ def ban_temporary():
 
     # mr dev is the best
     reason = "This Number will Be Disable for some {minutes} Minutes because he Have Been Stealing and scamming People On WhatsApp, destroying people WhatsApp account, sending negative Text, spamming virus, Sending nudes to different people on WhatsApp please He his Going against the Community guidelines please disable the account from using WhatsApp He hacked My Number and start using it to scam people Online And he his very dangerous Sending Different videos and pictures especially Nudes or sex stuff, please i beg of you WhatsApp support team work together and disable this number from Violating WhatsApp please, He is a Fraud, scammer,Thief, Sending spam messages, text viruses, And many of all negative attitude Please disable the account permanently from using WhatsApp account again he will continue doing so if yoi guy's didn't take action on time. Thank you"
-    number = input(f"{Fore.RED}🩸 𝗧𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗿𝗲𝗮𝗽𝗲𝗿 𝗮𝘀𝗸𝘀: enter number to UNBAM from perm ban: ").strip()
 
-if os.path.exists(perm_file):
-    with open(perm_file, "r") as f:
-        lines = f.readlines()
-    with open(perm_file, "w") as f:
-        for line in lines:
-            if line.strip() != number:
-                f.write(line)
-    print(f"{Fore.MAGENTA}💀 𝗡𝘂𝗺𝗯𝗲𝗿 {number} 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗿𝗶𝗽𝗽𝗲𝗱 𝗳𝗿𝗼𝗺 𝗲𝘁𝗲𝗿𝗻𝗮𝗹 𝗯𝗮𝗻𝗶𝘀𝗵𝗺𝗲𝗻𝘁.")
-
-from colorama import Fore
-import os
-
-temp_file = "temp_ban.txt"
+def unban_permanent():
+    number = input(f"{Fore.RED}🩸 Enter number to unban from PERMANENT ban: ").strip()
+    if os.path.exists(perm_file):
+        with open(perm_file, "r") as f:
+            lines = f.readlines()
+        with open(perm_file, "w") as f:
+            for line in lines:
+                if line.strip() != number:
+                    f.write(line)
+        print(f"{Fore.MAGENTA}💀 {number} has been freed from eternal darkness.")
+    else:
+        print(f"{Fore.YELLOW}⚠️ No permanent ban records found.")
 
 def unban_temporary():
     number = input(f"{Fore.RED}🩸 𝗦𝗵𝗮𝗱𝗼𝘄 𝗿𝗲𝗮𝗽𝗲𝗿 whispers: 𝗳𝗿𝗼𝗺 TEMP ban , 𝗰𝗹𝗮𝗶𝗺 𝘁𝗵𝗲 𝗰𝗵𝗮𝗼𝘁𝗶𝗰 𝗻𝘂𝗺𝗯𝗲𝗿: ").strip()
